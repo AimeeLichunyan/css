@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>calc()实现响应式布局</title>
+  </head>
+  <style media="screen">
+    .sidebar {
+      /*width: 16.6%;*/
+      width: calc(150px); /* 一个值的时候，是固定宽度*/
+      float: left;
+      background-color: #1b8cf2;
+      text-align: center;
+      height: 150px;
+
+    }
+    .content {
+      /*width: 80%;*/
+      width: calc(100% - 200px); /*两个值是做减法元素*/
+      float: right;
+      background-color:  #1b8cf2;
+      text-align: center;
+      height: 150px;
+
+    }
+    /*.sidebar {
+      height: 150px;
+      background: cyan;
+      float: left;
+      width: 150px;
+
+    }
+    .content {
+      height: 150px;
+      background: cyan;
+      margin-left: 170px;
+
+    }*/
+    /*.clip {
+      position: fixed;
+      background: url(./666.jpg);
+      height: 300px;
+      width: 300px;
+      clip: rect(10px, 100px, 100px, 10px)
+    }*/
+
+  </style>
+  <body>
+    <div class="container">
+
+      <div class="sidebar">sidebar</div>
+      <div class="content">content</div>
+    </div>
+
+  </body>
+</html>
